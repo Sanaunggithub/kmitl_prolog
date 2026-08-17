@@ -1,5 +1,5 @@
 % Who is a sister of Mary and who are their parents?
-sister(X, mary), parent(P, X).
+?- sister(X, mary), parent(P, X).
 
 % From the facts given, who has a parent?
 ?- parent(_, X).
