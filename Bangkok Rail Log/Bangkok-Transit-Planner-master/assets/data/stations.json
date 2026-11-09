@@ -1,0 +1,2807 @@
+[
+  {
+    "id": "BTS_N24",
+    "code": "N24",
+    "name_th": "คูคต",
+    "name_en": "Khu Khot",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.93233599419662,
+    "lng": 100.646563321352,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N23",
+    "code": "N23",
+    "name_th": "แยก คปอ.",
+    "name_en": "Yaek Kor Por Aor",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.924935994182283,
+    "lng": 100.62581241130829,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N22",
+    "code": "N22",
+    "name_th": "พิพิธภัณฑ์กองทัพอากาศ",
+    "name_en": "Royal Thai Air Force Museum",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.917909354433739,
+    "lng": 100.62169522047043,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N21",
+    "code": "N21",
+    "name_th": "โรงพยาบาลภูมิพลอดุลยเดช",
+    "name_en": "Bhumibol Adulyadej Hospital",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.910740608049272,
+    "lng": 100.61743050813675,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N20",
+    "code": "N20",
+    "name_th": "สะพานใหม่",
+    "name_en": "Saphan Mai",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.896587311896138,
+    "lng": 100.6091371178627,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N19",
+    "code": "N19",
+    "name_th": "สายหยุด",
+    "name_en": "Sai Yud",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.888451899405403,
+    "lng": 100.60429707169533,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N18",
+    "code": "N18",
+    "name_th": "พหลโยธิน 59",
+    "name_en": "Phahon Yothin 59",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.882481322137204,
+    "lng": 100.60079544782639,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N17",
+    "code": "N17",
+    "name_th": "วัดพระศรีมหาธาตุ",
+    "name_en": "Wat Phra Sri Mahathat",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.875536719814582,
+    "lng": 100.59672251343727,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N16",
+    "code": "N16",
+    "name_th": "กรมทหารราบที่ 11",
+    "name_en": "11th Infantry Regiment",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.867344581912818,
+    "lng": 100.5918462574482,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N15",
+    "code": "N15",
+    "name_th": "บางบัว",
+    "name_en": "Bang Bua",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.855995936067199,
+    "lng": 100.58516755700111,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N14",
+    "code": "N14",
+    "name_th": "กรมป่าไม้",
+    "name_en": "Royal Forest Department",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.8503188009662,
+    "lng": 100.581830888987,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N13",
+    "code": "N13",
+    "name_th": "มหาวิทยาลัยเกษตรศาสตร์",
+    "name_en": "Kasetsart University",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.84241745642748,
+    "lng": 100.57714238762856,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N12",
+    "code": "N12",
+    "name_th": "เสนานิคม",
+    "name_en": "Sena Nikhom",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.836492573998763,
+    "lng": 100.57367965579033,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N11",
+    "code": "N11",
+    "name_th": "รัชโยธิน",
+    "name_en": "Ratchayothin",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.829859130975516,
+    "lng": 100.56977033615112,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N10",
+    "code": "N10",
+    "name_th": "พหลโยธิน 24",
+    "name_en": "Phahon Yothin 24",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.82424386615215,
+    "lng": 100.56647792458534,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N9",
+    "code": "N9",
+    "name_th": "ห้าแยกลาดพร้าว",
+    "name_en": "Ha Yaek Lat Phrao",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.8164145649644,
+    "lng": 100.561961084604,
+    "interchange": [
+      "MRT_BL14"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N8",
+    "code": "N8",
+    "name_th": "หมอชิต",
+    "name_en": "Mo Chit",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.802386877821885,
+    "lng": 100.55372863742627,
+    "interchange": [
+      "MRT_BL13"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N7",
+    "code": "N7",
+    "name_th": "สะพานควาย",
+    "name_en": "Saphan Khwai",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.79375601808324,
+    "lng": 100.54972483215585,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N5",
+    "code": "N5",
+    "name_th": "อารีย์",
+    "name_en": "Ari",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.779724136074272,
+    "lng": 100.5446444736763,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N4",
+    "code": "N4",
+    "name_th": "สนามเป้า",
+    "name_en": "Sanam Pao",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.772624585098885,
+    "lng": 100.54209703590752,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N3",
+    "code": "N3",
+    "name_th": "อนุสาวรีย์ชัยสมรภูมิ",
+    "name_en": "Victory Monument",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.76274965189834,
+    "lng": 100.53709294202633,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N2",
+    "code": "N2",
+    "name_th": "พญาไท",
+    "name_en": "Phaya Thai",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.756910704970037,
+    "lng": 100.5338157484245,
+    "interchange": [
+      "ARL_A8"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_N1",
+    "code": "N1",
+    "name_th": "ราชเทวี",
+    "name_en": "Ratchathewi",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.751899107441432,
+    "lng": 100.53154128650783,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_CEN",
+    "code": "CEN",
+    "name_th": "สยาม",
+    "name_en": "Siam",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.745608079660181,
+    "lng": 100.53420190547386,
+    "interchange": [
+      "BTS_CEN_SILOM"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E1",
+    "code": "E1",
+    "name_th": "ชิดลม",
+    "name_en": "Chit Lom",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.744071583572714,
+    "lng": 100.54306079436026,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E2",
+    "code": "E2",
+    "name_th": "เพลินจิต",
+    "name_en": "Phloen Chit",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.743050120689588,
+    "lng": 100.54880588051687,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E3",
+    "code": "E3",
+    "name_th": "นานา",
+    "name_en": "Nana",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.740526512630016,
+    "lng": 100.55544264995163,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E4",
+    "code": "E4",
+    "name_th": "อโศก",
+    "name_en": "Asok",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.737060368134365,
+    "lng": 100.5603259474249,
+    "interchange": [
+      "MRT_BL22"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E5",
+    "code": "E5",
+    "name_th": "พร้อมพงษ์",
+    "name_en": "Phrom Phong",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.730416524364847,
+    "lng": 100.56975332969493,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E6",
+    "code": "E6",
+    "name_th": "ทองหล่อ",
+    "name_en": "Thong Lo",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.724239682098336,
+    "lng": 100.57853366764722,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E7",
+    "code": "E7",
+    "name_th": "เอกมัย",
+    "name_en": "Ekkamai",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.71958046993935,
+    "lng": 100.5850718908323,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E8",
+    "code": "E8",
+    "name_th": "พระโขนง",
+    "name_en": "Phra Khanong",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.715164194142291,
+    "lng": 100.59127215888024,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E9",
+    "code": "E9",
+    "name_th": "อ่อนนุช",
+    "name_en": "On Nut",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.705604441283308,
+    "lng": 100.60103081718678,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E10",
+    "code": "E10",
+    "name_th": "บางจาก",
+    "name_en": "Bang Chak",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.696783305691042,
+    "lng": 100.60537325866582,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E11",
+    "code": "E11",
+    "name_th": "ปุณณวิถี",
+    "name_en": "Punnawithi",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.68932551122064,
+    "lng": 100.6090339388925,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E12",
+    "code": "E12",
+    "name_th": "อุดมสุข",
+    "name_en": "Udom Suk",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.679871178547872,
+    "lng": 100.6094849863011,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E13",
+    "code": "E13",
+    "name_th": "บางนา",
+    "name_en": "Bang Na",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.668117734860864,
+    "lng": 100.60466175093777,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E14",
+    "code": "E14",
+    "name_th": "แบริ่ง",
+    "name_en": "Bearing",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.661163860926209,
+    "lng": 100.60183913369437,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E15",
+    "code": "E15",
+    "name_th": "สำโรง",
+    "name_en": "Samrong",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.646175284292461,
+    "lng": 100.59564352557456,
+    "interchange": [
+      "MRT_YL23"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E16",
+    "code": "E16",
+    "name_th": "ปู่เจ้า",
+    "name_en": "Pu Chao",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.6374556009276,
+    "lng": 100.592020601034,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E17",
+    "code": "E17",
+    "name_th": "ช้างเอราวัณ",
+    "name_en": "Chang Erawan",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.6214427777687,
+    "lng": 100.590152442455,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E18",
+    "code": "E18",
+    "name_th": "โรงเรียนนายเรือ",
+    "name_en": "Royal Thai Naval Academy",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.6085936774828,
+    "lng": 100.594851672649,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E19",
+    "code": "E19",
+    "name_th": "ปากน้ำ",
+    "name_en": "Pak Nam",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.6020658900177,
+    "lng": 100.597099363804,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E20",
+    "code": "E20",
+    "name_th": "ศรีนครินทร์",
+    "name_en": "Srinagarindra",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.5921383028305,
+    "lng": 100.608929246664,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E21",
+    "code": "E21",
+    "name_th": "แพรกษา",
+    "name_en": "Phraek Sa",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.5842804061102,
+    "lng": 100.607900619507,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E22",
+    "code": "E22",
+    "name_th": "สายลวด",
+    "name_en": "Sai Luat",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.5777493415592,
+    "lng": 100.605435669422,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_E23",
+    "code": "E23",
+    "name_th": "เคหะฯ",
+    "name_en": "Kheha",
+    "line_id": "BTS_SUKHUMVIT",
+    "lat": 13.5671649851318,
+    "lng": 100.607927441597,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคูคต",
+      "bound_1": "ไปเคหะฯ"
+    }
+  },
+  {
+    "id": "BTS_W1",
+    "code": "W1",
+    "name_th": "สนามกีฬาแห่งชาติ",
+    "name_en": "National Stadium",
+    "line_id": "BTS_SILOM",
+    "lat": 13.746497916783781,
+    "lng": 100.52908565730013,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_CEN_SILOM",
+    "code": "CEN",
+    "name_th": "สยาม",
+    "name_en": "Siam",
+    "line_id": "BTS_SILOM",
+    "lat": 13.745608079660181,
+    "lng": 100.53420190547386,
+    "interchange": [
+      "BTS_CEN"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S1",
+    "code": "S1",
+    "name_th": "ราชดำริ",
+    "name_en": "Ratchadamri",
+    "line_id": "BTS_SILOM",
+    "lat": 13.73945390065426,
+    "lng": 100.53944426878158,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S2",
+    "code": "S2",
+    "name_th": "ศาลาแดง",
+    "name_en": "Sala Daeng",
+    "line_id": "BTS_SILOM",
+    "lat": 13.72852833338344,
+    "lng": 100.53434444774771,
+    "interchange": [
+      "MRT_BL26"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S3",
+    "code": "S3",
+    "name_th": "ช่องนนทรี",
+    "name_en": "Chong Nonsi",
+    "line_id": "BTS_SILOM",
+    "lat": 13.723786338511877,
+    "lng": 100.52941446705861,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S4",
+    "code": "S4",
+    "name_th": "เซนต์หลุยส์",
+    "name_en": "Saint Louis",
+    "line_id": "BTS_SILOM",
+    "lat": 13.72074097226031,
+    "lng": 100.52664443850517,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S5",
+    "code": "S5",
+    "name_th": "สุรศักดิ์",
+    "name_en": "Surasak",
+    "line_id": "BTS_SILOM",
+    "lat": 13.719196163347588,
+    "lng": 100.52141563759317,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S6",
+    "code": "S6",
+    "name_th": "สะพานตากสิน",
+    "name_en": "Saphan Taksin",
+    "line_id": "BTS_SILOM",
+    "lat": 13.718801931907006,
+    "lng": 100.51414464359566,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S7",
+    "code": "S7",
+    "name_th": "กรุงธนบุรี",
+    "name_en": "Krung Thon Buri",
+    "line_id": "BTS_SILOM",
+    "lat": 13.720901703441616,
+    "lng": 100.50261293124643,
+    "interchange": [
+      "BTS_G1"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S8",
+    "code": "S8",
+    "name_th": "วงเวียนใหญ่",
+    "name_en": "Wongwian Yai",
+    "line_id": "BTS_SILOM",
+    "lat": 13.721087702375542,
+    "lng": 100.49514031743301,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S9",
+    "code": "S9",
+    "name_th": "โพธิ์นิมิตร",
+    "name_en": "Pho Nimit",
+    "line_id": "BTS_SILOM",
+    "lat": 13.719228973048402,
+    "lng": 100.48592620841143,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S10",
+    "code": "S10",
+    "name_th": "ตลาดพลู",
+    "name_en": "Talat Phlu",
+    "line_id": "BTS_SILOM",
+    "lat": 13.714217137174076,
+    "lng": 100.47669270882209,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S11",
+    "code": "S11",
+    "name_th": "วุฒากาศ",
+    "name_en": "Wutthakat",
+    "line_id": "BTS_SILOM",
+    "lat": 13.713027703243709,
+    "lng": 100.4690198270623,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_S12",
+    "code": "S12",
+    "name_th": "บางหว้า",
+    "name_en": "Bang Wa",
+    "line_id": "BTS_SILOM",
+    "lat": 13.720766616303294,
+    "lng": 100.45783572591478,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสนามกีฬาแห่งชาติ",
+      "bound_1": "ไปบางหว้า"
+    }
+  },
+  {
+    "id": "BTS_G1",
+    "code": "G1",
+    "name_th": "กรุงธนบุรี",
+    "name_en": "Krung Thon Buri",
+    "line_id": "BTS_GOLD",
+    "lat": 13.720901703441616,
+    "lng": 100.50261293124643,
+    "interchange": [
+      "BTS_S7"
+    ],
+    "exit_info": {
+      "bound_0": "ไปกรุงธนบุรี",
+      "bound_1": "ไปคลองสาน"
+    }
+  },
+  {
+    "id": "BTS_G2",
+    "code": "G2",
+    "name_th": "เจริญนคร",
+    "name_en": "Charoen Nakhon",
+    "line_id": "BTS_GOLD",
+    "lat": 13.7264642515125,
+    "lng": 100.509035736322,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปกรุงธนบุรี",
+      "bound_1": "ไปคลองสาน"
+    }
+  },
+  {
+    "id": "BTS_G3",
+    "code": "G3",
+    "name_th": "คลองสาน",
+    "name_en": "Khlong San",
+    "line_id": "BTS_GOLD",
+    "lat": 13.7303387528304,
+    "lng": 100.50769329071,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปกรุงธนบุรี",
+      "bound_1": "ไปคลองสาน"
+    }
+  },
+  {
+    "id": "MRT_BL01",
+    "code": "BL01",
+    "name_th": "ท่าพระ",
+    "name_en": "Tha Phra",
+    "line_id": "MRT_BLUE",
+    "lat": 13.729326490169472,
+    "lng": 100.47423541545868,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL02",
+    "code": "BL02",
+    "name_th": "จรัญฯ 13",
+    "name_en": "Charan 13",
+    "line_id": "MRT_BLUE",
+    "lat": 13.740067715996924,
+    "lng": 100.47086656093597,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL03",
+    "code": "BL03",
+    "name_th": "ไฟฉาย",
+    "name_en": "Fai Chai",
+    "line_id": "MRT_BLUE",
+    "lat": 13.755216632191079,
+    "lng": 100.46949461102486,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL04",
+    "code": "BL04",
+    "name_th": "บางขุนนนท์",
+    "name_en": "Bang Khun Non",
+    "line_id": "MRT_BLUE",
+    "lat": 13.763115721173635,
+    "lng": 100.47336235642433,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL05",
+    "code": "BL05",
+    "name_th": "บางยี่ขัน",
+    "name_en": "Bang Yi Khan",
+    "line_id": "MRT_BLUE",
+    "lat": 13.777411299701747,
+    "lng": 100.48537328839302,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL06",
+    "code": "BL06",
+    "name_th": "สิรินธร",
+    "name_en": "Sirindhorn",
+    "line_id": "MRT_BLUE",
+    "lat": 13.783617718286708,
+    "lng": 100.49298539757729,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL07",
+    "code": "BL07",
+    "name_th": "บางพลัด",
+    "name_en": "Bang Phlat",
+    "line_id": "MRT_BLUE",
+    "lat": 13.792337685669436,
+    "lng": 100.50483539700508,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL08",
+    "code": "BL08",
+    "name_th": "บางอ้อ",
+    "name_en": "Bang O",
+    "line_id": "MRT_BLUE",
+    "lat": 13.798858888246771,
+    "lng": 100.5097371339798,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL09",
+    "code": "BL09",
+    "name_th": "บางโพ",
+    "name_en": "Bang Pho",
+    "line_id": "MRT_BLUE",
+    "lat": 13.806364492522052,
+    "lng": 100.52101984620094,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL10",
+    "code": "BL10",
+    "name_th": "เตาปูน",
+    "name_en": "Tao Poon",
+    "line_id": "MRT_BLUE",
+    "lat": 13.80612994914501,
+    "lng": 100.53079784013575,
+    "interchange": [
+      "MRT_PP16"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL11",
+    "code": "BL11",
+    "name_th": "บางซื่อ",
+    "name_en": "Bang Sue",
+    "line_id": "MRT_BLUE",
+    "lat": 13.802980633284573,
+    "lng": 100.53913704799047,
+    "interchange": [
+      "SRT_RN00"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL12",
+    "code": "BL12",
+    "name_th": "กำแพงเพชร",
+    "name_en": "Kamphaeng Phet",
+    "line_id": "MRT_BLUE",
+    "lat": 13.797776427705719,
+    "lng": 100.54817118695642,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL13",
+    "code": "BL13",
+    "name_th": "สวนจตุจักร",
+    "name_en": "Chatuchak Park",
+    "line_id": "MRT_BLUE",
+    "lat": 13.802765780123295,
+    "lng": 100.55374975777596,
+    "interchange": [
+      "BTS_N8"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL14",
+    "code": "BL14",
+    "name_th": "พหลโยธิน",
+    "name_en": "Phahon Yothin",
+    "line_id": "MRT_BLUE",
+    "lat": 13.81315174006896,
+    "lng": 100.56090243174354,
+    "interchange": [
+      "BTS_N9"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL15",
+    "code": "BL15",
+    "name_th": "ลาดพร้าว",
+    "name_en": "Lat Phrao",
+    "line_id": "MRT_BLUE",
+    "lat": 13.80645406488398,
+    "lng": 100.57291228208642,
+    "interchange": [
+      "MRT_YL01"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL16",
+    "code": "BL16",
+    "name_th": "รัชดาภิเษก",
+    "name_en": "Ratchadaphisek",
+    "line_id": "MRT_BLUE",
+    "lat": 13.798852429578533,
+    "lng": 100.57460091158899,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL17",
+    "code": "BL17",
+    "name_th": "สุทธิสาร",
+    "name_en": "Sutthisan",
+    "line_id": "MRT_BLUE",
+    "lat": 13.79007138976821,
+    "lng": 100.57412763024426,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL18",
+    "code": "BL18",
+    "name_th": "ห้วยขวาง",
+    "name_en": "Huai Khwang",
+    "line_id": "MRT_BLUE",
+    "lat": 13.778672431506712,
+    "lng": 100.5735792858343,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL19",
+    "code": "BL19",
+    "name_th": "ศูนย์วัฒนธรรมแห่งประเทศไทย",
+    "name_en": "Thailand Cultural Centre",
+    "line_id": "MRT_BLUE",
+    "lat": 13.766350295819956,
+    "lng": 100.57044258535915,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL20",
+    "code": "BL20",
+    "name_th": "พระราม 9",
+    "name_en": "Phra Ram 9",
+    "line_id": "MRT_BLUE",
+    "lat": 13.757346212856078,
+    "lng": 100.56529956528175,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL21",
+    "code": "BL21",
+    "name_th": "เพชรบุรี",
+    "name_en": "Phetchaburi",
+    "line_id": "MRT_BLUE",
+    "lat": 13.749330410827774,
+    "lng": 100.56348938507715,
+    "interchange": [
+      "ARL_A6"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL22",
+    "code": "BL22",
+    "name_th": "สุขุมวิท",
+    "name_en": "Sukhumvit",
+    "line_id": "MRT_BLUE",
+    "lat": 13.737667585785157,
+    "lng": 100.56146914988385,
+    "interchange": [
+      "BTS_E4"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL23",
+    "code": "BL23",
+    "name_th": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
+    "name_en": "Queen Sirikit National Convention Centre",
+    "line_id": "MRT_BLUE",
+    "lat": 13.722940829088454,
+    "lng": 100.55969748266985,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL24",
+    "code": "BL24",
+    "name_th": "คลองเตย",
+    "name_en": "Khlong Toei",
+    "line_id": "MRT_BLUE",
+    "lat": 13.722291546570295,
+    "lng": 100.55398527114322,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL25",
+    "code": "BL25",
+    "name_th": "ลุมพินี",
+    "name_en": "Lumphini",
+    "line_id": "MRT_BLUE",
+    "lat": 13.72541093103132,
+    "lng": 100.54649983835961,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL26",
+    "code": "BL26",
+    "name_th": "สีลม",
+    "name_en": "Si Lom",
+    "line_id": "MRT_BLUE",
+    "lat": 13.729364088500606,
+    "lng": 100.53735221272413,
+    "interchange": [
+      "BTS_S2"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL27",
+    "code": "BL27",
+    "name_th": "สามย่าน",
+    "name_en": "Sam Yan",
+    "line_id": "MRT_BLUE",
+    "lat": 13.732497754635276,
+    "lng": 100.52942653037083,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL28",
+    "code": "BL28",
+    "name_th": "หัวลำโพง",
+    "name_en": "Hua Lamphong",
+    "line_id": "MRT_BLUE",
+    "lat": 13.737621412224208,
+    "lng": 100.51711157131334,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL29",
+    "code": "BL29",
+    "name_th": "วัดมังกร",
+    "name_en": "Wat Mangkon",
+    "line_id": "MRT_BLUE",
+    "lat": 13.742316211089031,
+    "lng": 100.50968617200851,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL30",
+    "code": "BL30",
+    "name_th": "สามยอด",
+    "name_en": "Sam Yot",
+    "line_id": "MRT_BLUE",
+    "lat": 13.746940800015208,
+    "lng": 100.50316840410233,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL31",
+    "code": "BL31",
+    "name_th": "สนามไชย",
+    "name_en": "Sanam Chai",
+    "line_id": "MRT_BLUE",
+    "lat": 13.743462596573167,
+    "lng": 100.49480527639389,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL32",
+    "code": "BL32",
+    "name_th": "อิสรภาพ",
+    "name_en": "Itsaraphap",
+    "line_id": "MRT_BLUE",
+    "lat": 13.73928607881357,
+    "lng": 100.4845954477787,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL33",
+    "code": "BL33",
+    "name_th": "บางไผ่",
+    "name_en": "Bang Phai",
+    "line_id": "MRT_BLUE",
+    "lat": 13.72460775123359,
+    "lng": 100.46525001525879,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL34",
+    "code": "BL34",
+    "name_th": "บางหว้า",
+    "name_en": "Bang Wa",
+    "line_id": "MRT_BLUE",
+    "lat": 13.720766616303294,
+    "lng": 100.45783572591478,
+    "interchange": [
+      "BTS_S12"
+    ],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL35",
+    "code": "BL35",
+    "name_th": "เพชรเกษม 48",
+    "name_en": "Phetkasem 48",
+    "line_id": "MRT_BLUE",
+    "lat": 13.715439681497774,
+    "lng": 100.44560551643372,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL36",
+    "code": "BL36",
+    "name_th": "ภาษีเจริญ",
+    "name_en": "Phasi Charoen",
+    "line_id": "MRT_BLUE",
+    "lat": 13.712934262070236,
+    "lng": 100.43440863490105,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL37",
+    "code": "BL37",
+    "name_th": "บางแค",
+    "name_en": "Bang Khae",
+    "line_id": "MRT_BLUE",
+    "lat": 13.712083,
+    "lng": 100.422861,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_BL38",
+    "code": "BL38",
+    "name_th": "หลักสอง",
+    "name_en": "Lak Song",
+    "line_id": "MRT_BLUE",
+    "lat": 13.7108509522363,
+    "lng": 100.409520417452,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "วงกลม (ตามเข็ม)",
+      "bound_1": "วงกลม (ทวนเข็ม)"
+    }
+  },
+  {
+    "id": "MRT_PP01",
+    "code": "PP01",
+    "name_th": "คลองบางไผ่",
+    "name_en": "Khlong Bang Phai",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.892498384213935,
+    "lng": 100.40826519165242,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP02",
+    "code": "PP02",
+    "name_th": "ตลาดบางใหญ่",
+    "name_en": "Talad Bang Yai",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.881152559514522,
+    "lng": 100.40927930915939,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP03",
+    "code": "PP03",
+    "name_th": "สามแยกบางใหญ่",
+    "name_en": "Sam Yaek Bang Yai",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.874732269204042,
+    "lng": 100.41936401768855,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP04",
+    "code": "PP04",
+    "name_th": "บางพลู",
+    "name_en": "Bang Phlu",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.87584835220433,
+    "lng": 100.43378419342285,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP05",
+    "code": "PP05",
+    "name_th": "บางรักใหญ่",
+    "name_en": "Bang Rak Yai",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.876679385770029,
+    "lng": 100.44491667819702,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP06",
+    "code": "PP06",
+    "name_th": "บางรักน้อยท่าอิฐ",
+    "name_en": "Bang Rak Noi Tha It",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.874894864958879,
+    "lng": 100.45599172271444,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP07",
+    "code": "PP07",
+    "name_th": "ไทรม้า",
+    "name_en": "Sai Ma",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.870481389574424,
+    "lng": 100.46668230323559,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP08",
+    "code": "PP08",
+    "name_th": "สะพานพระนั่งเกล้า",
+    "name_en": "Phra Nang Klao Bridge",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.87031880846791,
+    "lng": 100.48023913729526,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP09",
+    "code": "PP09",
+    "name_th": "แยกนนทบุรี 1",
+    "name_en": "Yaek Nonthaburi 1",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.865954703122492,
+    "lng": 100.49425593758342,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP10",
+    "code": "PP10",
+    "name_th": "บางกระสอ",
+    "name_en": "Bang Krasor",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.861650310455301,
+    "lng": 100.50465852728662,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP11",
+    "code": "PP11",
+    "name_th": "ศูนย์ราชการนนทบุรี",
+    "name_en": "Nonthaburi Civic Center",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.860188545828612,
+    "lng": 100.51299446229038,
+    "interchange": [
+      "MRT_PK01"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP12",
+    "code": "PP12",
+    "name_th": "กระทรวงสาธารณสุข",
+    "name_en": "Ministry of Public Health",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.848482093508665,
+    "lng": 100.51472396023978,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP13",
+    "code": "PP13",
+    "name_th": "แยกติวานนท์",
+    "name_en": "Yaek Tiwanon",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.83954337914116,
+    "lng": 100.51497252362412,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP14",
+    "code": "PP14",
+    "name_th": "วงศ์สว่าง",
+    "name_en": "Wong Sawang",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.8298162742186,
+    "lng": 100.52649906982305,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP15",
+    "code": "PP15",
+    "name_th": "บางซ่อน",
+    "name_en": "Bang Son",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.820054230209303,
+    "lng": 100.53242664295837,
+    "interchange": [
+      "SRT_RW01"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_PP16",
+    "code": "PP16",
+    "name_th": "เตาปูน",
+    "name_en": "Tao Poon",
+    "line_id": "MRT_PURPLE",
+    "lat": 13.80612994914501,
+    "lng": 100.53079784013575,
+    "interchange": [
+      "MRT_BL10"
+    ],
+    "exit_info": {
+      "bound_0": "ไปคลองบางไผ่",
+      "bound_1": "ไปเตาปูน"
+    }
+  },
+  {
+    "id": "MRT_YL01",
+    "code": "YL01",
+    "name_th": "ลาดพร้าว",
+    "name_en": "Lat Phrao",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.806661656443467,
+    "lng": 100.57486429703907,
+    "interchange": [
+      "MRT_BL15"
+    ],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL02",
+    "code": "YL02",
+    "name_th": "ภาวนา",
+    "name_en": "Phawana",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.800128106138663,
+    "lng": 100.58424608328725,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL03",
+    "code": "YL03",
+    "name_th": "โชคชัย 4",
+    "name_en": "Chok Chai 4",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.794447428215591,
+    "lng": 100.59439026543511,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL04",
+    "code": "YL04",
+    "name_th": "ลาดพร้าว 71",
+    "name_en": "Lat Phrao 71",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.787319185112759,
+    "lng": 100.60714503677981,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL05",
+    "code": "YL05",
+    "name_th": "ลาดพร้าว 83",
+    "name_en": "Lat Phrao 83",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.78367384128511,
+    "lng": 100.61373547855908,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL06",
+    "code": "YL06",
+    "name_th": "มหาดไทย",
+    "name_en": "Mahat Thai",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.778072267282813,
+    "lng": 100.62370979299688,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL07",
+    "code": "YL07",
+    "name_th": "ลาดพร้าว 101",
+    "name_en": "Lat Phrao 101",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.774366551262984,
+    "lng": 100.63037699001359,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL08",
+    "code": "YL08",
+    "name_th": "บางกะปิ",
+    "name_en": "Bang Kapi",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.76900687183069,
+    "lng": 100.63985159803427,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL09",
+    "code": "YL09",
+    "name_th": "แยกลำสาลี",
+    "name_en": "Yaek Lam Sali",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.761953327587236,
+    "lng": 100.64558158212934,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL10",
+    "code": "YL10",
+    "name_th": "ศรีกรีฑา",
+    "name_en": "Si Kritha",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.75090416697679,
+    "lng": 100.6449120036011,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL11",
+    "code": "YL11",
+    "name_th": "หัวหมาก",
+    "name_en": "Hua Mak",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.736554778696716,
+    "lng": 100.64144168509715,
+    "interchange": [
+      "ARL_A4"
+    ],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL12",
+    "code": "YL12",
+    "name_th": "กลันตัน",
+    "name_en": "Kalantan",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.725633318605238,
+    "lng": 100.64177373246604,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL13",
+    "code": "YL13",
+    "name_th": "ศรีนุช",
+    "name_en": "Si Nut",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.711086177670863,
+    "lng": 100.64417497253186,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL14",
+    "code": "YL14",
+    "name_th": "ศรีนครินทร์ 38",
+    "name_en": "Srinagarindra 38",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.700619245425008,
+    "lng": 100.64660486189211,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL15",
+    "code": "YL15",
+    "name_th": "สวนหลวง ร.9",
+    "name_en": "Suan Luang Rama IX",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.690799722431967,
+    "lng": 100.64712504228038,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL16",
+    "code": "YL16",
+    "name_th": "ศรีอุดม",
+    "name_en": "Si Udom",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.676549086767018,
+    "lng": 100.64616360997718,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL17",
+    "code": "YL17",
+    "name_th": "ศรีเอี่ยม",
+    "name_en": "Si Iam",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.66769075772739,
+    "lng": 100.6452185640344,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL18",
+    "code": "YL18",
+    "name_th": "ศรีลาซาล",
+    "name_en": "Si La Salle",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.655009646875396,
+    "lng": 100.64202422080358,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL19",
+    "code": "YL19",
+    "name_th": "ศรีแบริ่ง",
+    "name_en": "Si Bearing",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.6435767339252,
+    "lng": 100.63630687401938,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL20",
+    "code": "YL20",
+    "name_th": "ศรีด่าน",
+    "name_en": "Si Dan",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.633102283005138,
+    "lng": 100.6301508559385,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_YL21",
+    "code": "YL21",
+    "name_th": "ศรีเทพา",
+    "name_en": "Si Thepha",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.629991513396405,
+    "lng": 100.62255620956421,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    }
+  },
+  {
+    "id": "MRT_YL22",
+    "code": "YL22",
+    "name_th": "ทิพวัล",
+    "name_en": "Thipphawan",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.636685352415956,
+    "lng": 100.6099283695221,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    }
+  },
+  {
+    "id": "MRT_YL23",
+    "code": "YL23",
+    "name_th": "สำโรง",
+    "name_en": "Samrong",
+    "line_id": "MRT_YELLOW",
+    "lat": 13.646175284292461,
+    "lng": 100.59564352557456,
+    "interchange": [
+      "BTS_E15"
+    ],
+    "exit_info": {
+      "bound_0": "ไปลาดพร้าว",
+      "bound_1": "ไปสำโรง"
+    }
+  },
+  {
+    "id": "ARL_A8",
+    "code": "A8",
+    "name_th": "พญาไท",
+    "name_en": "Phaya Thai",
+    "line_id": "ARL",
+    "lat": 13.756910704970037,
+    "lng": 100.5338157484245,
+    "interchange": [
+      "BTS_N2"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A7",
+    "code": "A7",
+    "name_th": "ราชปรารภ",
+    "name_en": "Ratchaprarop",
+    "line_id": "ARL",
+    "lat": 13.754883778545631,
+    "lng": 100.54217911630396,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A6",
+    "code": "A6",
+    "name_th": "มักกะสัน",
+    "name_en": "Makkasan",
+    "line_id": "ARL",
+    "lat": 13.750833163678905,
+    "lng": 100.56122519248193,
+    "interchange": [
+      "MRT_BL21"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A5",
+    "code": "A5",
+    "name_th": "รามคำแหง",
+    "name_en": "Ramkhamhaeng",
+    "line_id": "ARL",
+    "lat": 13.742942062306419,
+    "lng": 100.60005603456344,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A4",
+    "code": "A4",
+    "name_th": "หัวหมาก",
+    "name_en": "Hua Mak",
+    "line_id": "ARL",
+    "lat": 13.737923964923223,
+    "lng": 100.64482273430833,
+    "interchange": [
+      "MRT_YL11"
+    ],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    },
+    "verified": true
+  },
+  {
+    "id": "ARL_A3",
+    "code": "A3",
+    "name_th": "บ้านทับช้าง",
+    "name_en": "Ban Thap Chang",
+    "line_id": "ARL",
+    "lat": 13.73279942075091,
+    "lng": 100.69075070333975,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A2",
+    "code": "A2",
+    "name_th": "ลาดกระบัง",
+    "name_en": "Lat Krabang",
+    "line_id": "ARL",
+    "lat": 13.727634903231579,
+    "lng": 100.74842437213107,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "ARL_A1",
+    "code": "A1",
+    "name_th": "สุวรรณภูมิ",
+    "name_en": "Suvarnabhumi",
+    "line_id": "ARL",
+    "lat": 13.694133503391848,
+    "lng": 100.75126500698755,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปสุวรรณภูมิ",
+      "bound_1": "ไปพญาไท"
+    }
+  },
+  {
+    "id": "SRT_RN00",
+    "code": "RN00",
+    "name_th": "กรุงเทพอภิวัฒน์",
+    "name_en": "Krung Thep Aphiwat",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8046961672143,
+    "lng": 100.541766732931,
+    "interchange": [
+      "MRT_BL11"
+    ],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN01",
+    "code": "RN01",
+    "name_th": "จตุจักร",
+    "name_en": "Chatuchak",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8262376132103,
+    "lng": 100.54946064949,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN02",
+    "code": "RN02",
+    "name_th": "วัดเสมียนนารี",
+    "name_en": "Wat Samian Nari",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8417116871433,
+    "lng": 100.557650774717,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN03",
+    "code": "RN03",
+    "name_th": "บางเขน",
+    "name_en": "Bang Khen",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.849454197578138,
+    "lng": 100.56174516677856,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN04",
+    "code": "RN04",
+    "name_th": "ทุ่งสองห้อง",
+    "name_en": "Thung Song Hong",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8601026578644,
+    "lng": 100.567475706339,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN05",
+    "code": "RN05",
+    "name_th": "หลักสี่",
+    "name_en": "Lak Si",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8863480240497,
+    "lng": 100.581841617823,
+    "interchange": [
+      "MRT_PK14"
+    ],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN06",
+    "code": "RN06",
+    "name_th": "การเคหะฯ",
+    "name_en": "Kan Kheha",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.8984463482845,
+    "lng": 100.588769763708,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN07",
+    "code": "RN07",
+    "name_th": "ดอนเมือง",
+    "name_en": "Don Mueang",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.9147773672768,
+    "lng": 100.597914755344,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN08",
+    "code": "RN08",
+    "name_th": "หลักหก",
+    "name_en": "Lak Hok",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.9658334,
+    "lng": 100.6053409,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RN09",
+    "code": "RN09",
+    "name_th": "รังสิต",
+    "name_en": "Rangsit",
+    "line_id": "SRT_RED_NORTH",
+    "lat": 13.9905124207755,
+    "lng": 100.602196902037,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปรังสิต",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RW01",
+    "code": "RW01",
+    "name_th": "บางซ่อน",
+    "name_en": "Bang Son",
+    "line_id": "SRT_RED_WEST",
+    "lat": 13.8221159683554,
+    "lng": 100.534240454435,
+    "interchange": [
+      "MRT_PP15"
+    ],
+    "exit_info": {
+      "bound_0": "ไปตลิ่งชัน",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RW02",
+    "code": "RW02",
+    "name_th": "บางบำหรุ",
+    "name_en": "Bang Bamru",
+    "line_id": "SRT_RED_WEST",
+    "lat": 13.7921826958138,
+    "lng": 100.477441996336,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปตลิ่งชัน",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "SRT_RW03",
+    "code": "RW03",
+    "name_th": "ตลิ่งชัน",
+    "name_en": "Taling Chan",
+    "line_id": "SRT_RED_WEST",
+    "lat": 13.789244381265998,
+    "lng": 100.44008418917656,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปตลิ่งชัน",
+      "bound_1": "ไปกรุงเทพอภิวัฒน์"
+    }
+  },
+  {
+    "id": "MRT_PK01",
+    "code": "PK01",
+    "name_th": "ศูนย์ราชการนนทบุรี",
+    "name_en": "Nonthaburi Civic Center",
+    "line_id": "MRT_PINK",
+    "lat": 13.860188545828612,
+    "lng": 100.51299446229038,
+    "interchange": [
+      "MRT_PP11"
+    ],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK02",
+    "code": "PK02",
+    "name_th": "แคราย",
+    "name_en": "Khae Rai",
+    "line_id": "MRT_PINK",
+    "lat": 13.8627158701009,
+    "lng": 100.520602762699,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK03",
+    "code": "PK03",
+    "name_th": "สนามบินน้ำ",
+    "name_en": "Sanambin Nam",
+    "line_id": "MRT_PINK",
+    "lat": 13.8740667913817,
+    "lng": 100.516327321529,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK04",
+    "code": "PK04",
+    "name_th": "สามัคคี",
+    "name_en": "Samakkhi",
+    "line_id": "MRT_PINK",
+    "lat": 13.8892838101952,
+    "lng": 100.510565936565,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK05",
+    "code": "PK05",
+    "name_th": "กรมชลประทาน",
+    "name_en": "Royal Irrigation Department",
+    "line_id": "MRT_PINK",
+    "lat": 13.898511440324569,
+    "lng": 100.50709247589111,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK06",
+    "code": "PK06",
+    "name_th": "แยกปากเกร็ด",
+    "name_en": "Yaek Pak Kret",
+    "line_id": "MRT_PINK",
+    "lat": 13.906293712734822,
+    "lng": 100.50541341304779,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK07",
+    "code": "PK07",
+    "name_th": "เลี่ยงเมืองปากเกร็ด",
+    "name_en": "Pak Kret Bypass",
+    "line_id": "MRT_PINK",
+    "lat": 13.9065345450271,
+    "lng": 100.5155374109745,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK08",
+    "code": "PK08",
+    "name_th": "แจ้งวัฒนะ-ปากเกร็ด 28",
+    "name_en": "Chaeng Watthana-Pak Kret 28",
+    "line_id": "MRT_PINK",
+    "lat": 13.904197810312567,
+    "lng": 100.52925020456314,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK09",
+    "code": "PK09",
+    "name_th": "ศรีรัช",
+    "name_en": "Si Rat",
+    "line_id": "MRT_PINK",
+    "lat": 13.900583961313483,
+    "lng": 100.53998708724976,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK10",
+    "code": "PK10",
+    "name_th": "เมืองทองธานี",
+    "name_en": "Muang Thong Thani",
+    "line_id": "MRT_PINK",
+    "lat": 13.897446532249862,
+    "lng": 100.5483703315258,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK11",
+    "code": "PK11",
+    "name_th": "แจ้งวัฒนะ 14",
+    "name_en": "Chaeng Watthana 14",
+    "line_id": "MRT_PINK",
+    "lat": 13.893309226781366,
+    "lng": 100.56009292602539,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK12",
+    "code": "PK12",
+    "name_th": "ศูนย์ราชการเฉลิมพระเกียรติ",
+    "name_en": "Government Complex",
+    "line_id": "MRT_PINK",
+    "lat": 13.890779679829011,
+    "lng": 100.56730672717094,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK13",
+    "code": "PK13",
+    "name_th": "โทรคมนาคมแห่งชาติ",
+    "name_en": "National Telecom",
+    "line_id": "MRT_PINK",
+    "lat": 13.887577022864512,
+    "lng": 100.575602799654,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK14",
+    "code": "PK14",
+    "name_th": "หลักสี่",
+    "name_en": "Lak Si",
+    "line_id": "MRT_PINK",
+    "lat": 13.884158202806777,
+    "lng": 100.58260336518288,
+    "interchange": [
+      "SRT_RN05"
+    ],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK15",
+    "code": "PK15",
+    "name_th": "ราชภัฏพระนคร",
+    "name_en": "Rajabhat Phranakhon",
+    "line_id": "MRT_PINK",
+    "lat": 13.879921712262163,
+    "lng": 100.58927401900291,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK16",
+    "code": "PK16",
+    "name_th": "วัดพระศรีมหาธาตุ",
+    "name_en": "Wat Phra Sri Mahathat",
+    "line_id": "MRT_PINK",
+    "lat": 13.874840164986763,
+    "lng": 100.59707522392273,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK17",
+    "code": "PK17",
+    "name_th": "รามอินทรา 3",
+    "name_en": "Ram Inthra 3",
+    "line_id": "MRT_PINK",
+    "lat": 13.870956345239533,
+    "lng": 100.60255900025368,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK18",
+    "code": "PK18",
+    "name_th": "ลาดปลาเค้า",
+    "name_en": "Lat Pla Khao",
+    "line_id": "MRT_PINK",
+    "lat": 13.86280571095533,
+    "lng": 100.61775639653206,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK19",
+    "code": "PK19",
+    "name_th": "รามอินทรา กม.4",
+    "name_en": "Ram Inthra Kor Mor 4",
+    "line_id": "MRT_PINK",
+    "lat": 13.858331854580559,
+    "lng": 100.62605783343315,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK20",
+    "code": "PK20",
+    "name_th": "มัยลาภ",
+    "name_en": "Maiyalap",
+    "line_id": "MRT_PINK",
+    "lat": 13.854998541184237,
+    "lng": 100.6322430074215,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK21",
+    "code": "PK21",
+    "name_th": "วัชรพล",
+    "name_en": "Vacharaphol",
+    "line_id": "MRT_PINK",
+    "lat": 13.849265390687453,
+    "lng": 100.6428337097168,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_PK22",
+    "code": "PK22",
+    "name_th": "รามอินทรา กม.6",
+    "name_en": "Ram Inthra Kor Mor 6",
+    "line_id": "MRT_PINK",
+    "lat": 13.845207958650015,
+    "lng": 100.65019369125366,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    },
+    "verified": true
+  },
+  {
+    "id": "MRT_PK23",
+    "code": "PK23",
+    "name_th": "คู้บอน",
+    "name_en": "Khu Bon",
+    "line_id": "MRT_PINK",
+    "lat": 13.840548855956863,
+    "lng": 100.65876334905624,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK24",
+    "code": "PK24",
+    "name_th": "รามอินทรา กม.9",
+    "name_en": "Ram Inthra Kor Mor 9",
+    "line_id": "MRT_PINK",
+    "lat": 13.833787912663162,
+    "lng": 100.6674537062645,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK25",
+    "code": "PK25",
+    "name_th": "วงแหวนรามอินทรา",
+    "name_en": "Outer Ring Road-Ram Inthra",
+    "line_id": "MRT_PINK",
+    "lat": 13.824482179076428,
+    "lng": 100.67706674337387,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK26",
+    "code": "PK26",
+    "name_th": "นพรัตน์",
+    "name_en": "Nopparat",
+    "line_id": "MRT_PINK",
+    "lat": 13.816551306514578,
+    "lng": 100.68549424409866,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK27",
+    "code": "PK27",
+    "name_th": "บางชัน",
+    "name_en": "Bang Chan",
+    "line_id": "MRT_PINK",
+    "lat": 13.812719908133074,
+    "lng": 100.7027918100357,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK28",
+    "code": "PK28",
+    "name_th": "เศรษฐบุตรบำเพ็ญ",
+    "name_en": "Setthabutbamphen",
+    "line_id": "MRT_PINK",
+    "lat": 13.812683443127948,
+    "lng": 100.7124799489975,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK29",
+    "code": "PK29",
+    "name_th": "ตลาดมีนบุรี",
+    "name_en": "Min Buri Market",
+    "line_id": "MRT_PINK",
+    "lat": 13.812514141243762,
+    "lng": 100.72568714618683,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_PK30",
+    "code": "PK30",
+    "name_th": "มีนบุรี",
+    "name_en": "Min Buri",
+    "line_id": "MRT_PINK",
+    "lat": 13.808439138019946,
+    "lng": 100.73256030678749,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปมีนบุรี",
+      "bound_1": "ไปศูนย์ราชการนนทบุรี"
+    }
+  },
+  {
+    "id": "MRT_MT01",
+    "code": "MT01",
+    "name_th": "อิมแพ็ค เมืองทองธานี",
+    "name_en": "Impact Muang Thong Thani",
+    "line_id": "MRT_PINK_BRANCH",
+    "lat": 13.9109007259292,
+    "lng": 100.544325560331,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปทะเลสาบเมืองทองธานี",
+      "bound_1": "ไปศรีรัช (เมืองทองธานี)"
+    }
+  },
+  {
+    "id": "MRT_MT02",
+    "code": "MT02",
+    "name_th": "ทะเลสาบเมืองทองธานี",
+    "name_en": "Lake Muang Thong Thani",
+    "line_id": "MRT_PINK_BRANCH",
+    "lat": 13.918305080465617,
+    "lng": 100.5456505715847,
+    "interchange": [],
+    "exit_info": {
+      "bound_0": "ไปทะเลสาบเมืองทองธานี",
+      "bound_1": "ไปศรีรัช (เมืองทองธานี)"
+    }
+  }
+]

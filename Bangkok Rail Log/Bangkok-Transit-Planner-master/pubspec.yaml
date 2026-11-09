@@ -1,0 +1,73 @@
+name: bkk_transit_planner
+description: "Bangkok Transit Planner — วางแผนการเดินทาง BTS MRT ARL"
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # UI & Icons
+  cupertino_icons: ^1.0.8
+  google_fonts: ^8.1.0
+  animations: ^2.0.11
+
+  # State Management
+  flutter_riverpod: ^3.1.0
+  riverpod_annotation: ^4.0.0
+
+  # Navigation & Routing
+  go_router: ^18.0.0
+
+  # Backend & Auth
+  supabase_flutter: ^2.9.0
+  flutter_secure_storage: ^10.3.1
+  google_sign_in: ^7.2.0
+
+  # Map & Location
+  flutter_map: ^8.3.0
+  flutter_map_vector_tiles: ^2.8.1
+  latlong2: ^0.10.1
+  geolocator: ^14.0.3
+  permission_handler: ^12.0.3
+
+  # Notifications & Live Activities
+  flutter_local_notifications: ^22.0.0
+  live_activities: ^2.5.1
+
+  # Utilities & Storage
+  intl: ^0.20.2
+  shared_preferences: ^2.5.3
+  path_provider: ^2.1.2
+  http: ^1.2.0
+  archive: ^4.0.2
+
+  # Models & Serialization
+  freezed_annotation: ^3.0.0
+  json_annotation: ^4.9.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  image: ^4.5.2
+
+  # Code Generation
+  freezed: ^3.2.3
+  json_serializable: ^6.9.5
+  build_runner: ^2.4.15
+  riverpod_generator: ^4.0.0+1
+  custom_lint:
+  riverpod_lint: ^3.1.0
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/images/
+    - assets/google_fonts/

@@ -1,0 +1,581 @@
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
+import '../../core/router/route_constants.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:geolocator/geolocator.dart';
+import '../../core/theme/app_theme.dart';
+import '../../models/searchable_item.dart';
+import '../../models/station.dart';
+import '../../models/custom_location.dart';
+import '../../providers/providers.dart';
+import '../search/search_view_model.dart';
+import '../utility/route_calculating_overlay.dart';
+
+import 'favorites_view_model.dart';
+import '../../core/constants/translation_helper.dart';
+import '../../repositories/transit_repository.dart';
+import '../../widgets/shared/crowd_level_badge.dart';
+import '../../widgets/shared/station_badge.dart';
+
+class FavoritesScreen extends ConsumerStatefulWidget {
+  const FavoritesScreen({super.key});
+
+  @override
+  ConsumerState<FavoritesScreen> createState() => _FavoritesScreenState();
+}
+
+class _FavoritesScreenState extends ConsumerState<FavoritesScreen> {
+  final _resolvedItems = <String, SearchableItem?>{};
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+    // Refresh favorites data whenever the tab is entered
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        ref.read(favoritesViewModelProvider.notifier).refresh();
+      }
+    });
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final state = ref.watch(favoritesViewModelProvider);
+    final vm = ref.read(favoritesViewModelProvider.notifier);
+    final theme = Theme.of(context);
+    final t = ref.watch(translationsProvider);
+    final localeCode = ref.watch(localeProvider);
+
+    return Stack(
+      children: [
+        DefaultTabController(
+          length: 2,
+          child: Scaffold(
+            appBar: AppBar(
+              title: Text(t.navigation.favoritesTitle),
+              bottom: TabBar(
+                tabs: [
+                  Tab(
+                    icon: Builder(
+                      builder: (context) {
+                        final controller = DefaultTabController.of(context);
+                        final isSelected = controller.index == 0;
+                        return Icon(
+                          Icons.favorite_rounded,
+                          color: isSelected
+                              ? theme.appColors.favoriteColor
+                              : theme.appColors.favoriteColor?.withValues(
+                                  alpha: 0.5,
+                                ),
+                        );
+                      },
+                    ),
+                    text: t.favorites.favStationsTab,
+                  ),
+                  Tab(
+                    icon: Builder(
+                      builder: (context) {
+                        final controller = DefaultTabController.of(context);
+                        final isSelected = controller.index == 1;
+                        return Icon(
+                          Icons.route_rounded,
+                          color: isSelected
+                              ? theme.appColors.routeColor
+                              : theme.appColors.routeColor?.withValues(
+                                  alpha: 0.5,
+                                ),
+                        );
+                      },
+                    ),
+                    text: t.favorites.favRoutesTab,
+                  ),
+                ],
+                indicatorColor: theme.colorScheme.onSurface,
+                labelColor: theme.colorScheme.onSurface,
+                unselectedLabelColor: theme.colorScheme.onSurface.withValues(
+                  alpha: 0.6,
+                ),
+              ),
+            ),
+            body: TabBarView(
+              children: [
+                _buildStationsTab(context, state, vm, theme, t, localeCode),
+                _buildRoutesTab(context, state, vm, theme, t, localeCode),
+              ],
+            ),
+          ),
+        ),
+
+        // Route Calculating Overlay
+        Consumer(
+          builder: (context, ref, child) {
+            final isCalculating = ref.watch(
+              searchViewModelProvider.select((s) => s.isCalculating),
+            );
+            if (!isCalculating) return const SizedBox.shrink();
+            return RouteCalculatingOverlay(theme: theme, t: t);
+          },
+        ),
+      ],
+    );
+  }
+
+  Widget _buildStationsTab(
+    BuildContext context,
+    FavoritesState state,
+    FavoritesViewModel vm,
+    ThemeData theme,
+    AppLocalizations t,
+    String localeCode,
+  ) {
+    if (state.favoriteStations.isEmpty) {
+      return _buildEmptyState(
+        context: context,
+        icon: Icons.favorite_outline_rounded,
+        title: t.favorites.emptyFavTitle,
+        subtitle: t.favorites.emptyFavSubtitle,
+        theme: theme,
+      );
+    }
+
+    final scheduleService = ref.watch(scheduleServiceProvider);
+    final crowdService = ref.watch(crowdServiceProvider);
+    final searchVm = ref.read(searchViewModelProvider.notifier);
+
+    return ListView.builder(
+      itemCount: state.favoriteStations.length,
+      padding: const EdgeInsets.all(16),
+      itemBuilder: (context, index) {
+        final station = state.favoriteStations[index];
+        final crowdInfo = crowdService.getCrowdInfo(station.id);
+        final minutesUntilNext = scheduleService.getMinutesUntilNextTrain(
+          station.lineId,
+        );
+
+        final String stationName = station.localizedName(localeCode);
+
+        final String trainStatusText;
+        if (minutesUntilNext == null) {
+          trainStatusText = t.routeResult.serviceEnded;
+        } else if (minutesUntilNext == 0) {
+          trainStatusText = t.routeResult.trainArriving;
+        } else {
+          trainStatusText =
+              '${t.routeResult.nextTrain}: ~$minutesUntilNext ${t.common.minutesUnit}';
+        }
+
+        return Card(
+          margin: const EdgeInsets.only(bottom: 12),
+          child: Padding(
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                // Header (Code + Name + Delete)
+                Row(
+                  children: [
+                    StationBadge(
+                      text: station.code,
+                      lineId: station.lineId,
+                      fontSize: 12,
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            stationName,
+                            style: theme.textTheme.titleMedium?.copyWith(
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            localeCode == 'th'
+                                ? station.nameEn
+                                : station.nameTh,
+                            style: theme.textTheme.bodyMedium?.copyWith(
+                              color: theme.colorScheme.onSurface.withValues(
+                                alpha: 0.5,
+                              ),
+                              fontSize: 12,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+                    IconButton(
+                      icon: const Icon(
+                        Icons.delete_outline_rounded,
+                        color: Colors.redAccent,
+                      ),
+                      onPressed: () {
+                        vm.toggleFavoriteStation(station.id);
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          SnackBar(
+                            content: Text(t.favorites.stationRemovedFav),
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
+                const Divider(height: 20),
+
+                // Next Train & Crowd Info
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    // Next Train
+                    Expanded(
+                      child: Row(
+                        children: [
+                          Icon(
+                            Icons.access_time_rounded,
+                            size: 14,
+                            color: theme.appColors.timeColor,
+                          ),
+                          const SizedBox(width: 4),
+                          Expanded(
+                            child: Text(
+                              trainStatusText,
+                              style: theme.textTheme.bodyMedium?.copyWith(
+                                color: minutesUntilNext == 0
+                                    ? Colors.amber.shade700
+                                    : theme.appColors.timeColor,
+                                fontWeight: minutesUntilNext == 0
+                                    ? FontWeight.bold
+                                    : null,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
+
+                    // Crowd Level
+                    CrowdLevelBadge(crowdInfo: crowdInfo, theme: theme, t: t),
+                  ],
+                ),
+                const SizedBox(height: 16),
+
+                // Quick Action Buttons
+                Row(
+                  children: [
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: () {
+                          searchVm.setOrigin(station);
+                          context.go(AppRoute.map); // Switch to Map Screen (search is on Map)
+                        },
+                        icon: const Icon(
+                          Icons.trip_origin_rounded,
+                          size: 16,
+                          color: Colors.green,
+                        ),
+                        label: Text(t.favorites.setOriginBtn),
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                        ),
+                      ),
+                    ),
+                    const SizedBox(width: 12),
+                    Expanded(
+                      child: OutlinedButton.icon(
+                        onPressed: () {
+                          searchVm.setDestination(station);
+                          context.go(AppRoute.map); // Switch to Map Screen (search is on Map)
+                        },
+                        icon: const Icon(
+                          Icons.location_on_rounded,
+                          size: 16,
+                          color: Colors.red,
+                        ),
+                        label: Text(t.favorites.setDestBtn),
+                        style: OutlinedButton.styleFrom(
+                          padding: const EdgeInsets.symmetric(vertical: 8),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        );
+      },
+    );
+  }
+
+  SearchableItem? _resolveSearchableItem(
+    String id,
+    String nameTh,
+    String nameEn,
+    String? latStr,
+    String? lngStr,
+    TransitRepository transitRepo,
+  ) {
+    if (id.isEmpty) return null;
+    final cacheKey = '${id}_${latStr}_$lngStr';
+    if (_resolvedItems.containsKey(cacheKey)) {
+      return _resolvedItems[cacheKey];
+    }
+
+    // 1. Check if it's a station
+    final station = transitRepo.getStation(id);
+    if (station != null) {
+      _resolvedItems[cacheKey] = station;
+      return station;
+    }
+
+    // 2. Check if it's a landmark
+    for (final l in transitRepo.landmarks) {
+      if (l.id == id) {
+        _resolvedItems[cacheKey] = l;
+        return l;
+      }
+    }
+
+    // 3. Check if we have stored coordinates
+    double? lat;
+    double? lng;
+    if (latStr != null &&
+        latStr.isNotEmpty &&
+        lngStr != null &&
+        lngStr.isNotEmpty) {
+      lat = double.tryParse(latStr);
+      lng = double.tryParse(lngStr);
+    }
+
+    // 4. If no stored coordinates, try to parse from ID (for CUSTOM_lat_lng or OSM_type_id_lat_lng)
+    if (lat == null || lng == null) {
+      if (id.startsWith('CUSTOM_')) {
+        final parts = id.split('_');
+        if (parts.length >= 3) {
+          lat = double.tryParse(parts[1]);
+          lng = double.tryParse(parts[2]);
+        }
+      } else if (id.startsWith('OSM_')) {
+        final parts = id.split('_');
+        if (parts.length >= 5) {
+          lat = double.tryParse(parts[3]);
+          lng = double.tryParse(parts[4]);
+        }
+      }
+    }
+
+    // 5. If we resolved coordinates, create a CustomLocation
+    if (lat != null && lng != null) {
+      // Find nearest station
+      Station? nearest;
+      double minDist = double.infinity;
+      for (final s in transitRepo.stations) {
+        final dist = Geolocator.distanceBetween(lat, lng, s.lat, s.lng);
+        if (dist < minDist) {
+          minDist = dist;
+          nearest = s;
+        }
+      }
+      final walkMin = nearest != null ? (minDist / 80.0).clamp(1.0, 30.0) : 5.0;
+
+      final loc = CustomLocation(
+        id: id,
+        nameTh: nameTh,
+        nameEn: nameEn,
+        nearestStationId: nearest?.id ?? '',
+        walkingMinutes: walkMin,
+        lat: lat,
+        lng: lng,
+      );
+      _resolvedItems[cacheKey] = loc;
+      return loc;
+    }
+
+    _resolvedItems[cacheKey] = null;
+    return null;
+  }
+
+  Widget _buildRoutesTab(
+    BuildContext context,
+    FavoritesState state,
+    FavoritesViewModel vm,
+    ThemeData theme,
+    AppLocalizations t,
+    String localeCode,
+  ) {
+    if (state.savedRoutes.isEmpty) {
+      return _buildEmptyState(
+        context: context,
+        icon: Icons.alt_route_rounded,
+        title: t.favorites.emptyRouteTitle,
+        subtitle: t.favorites.emptyRouteSubtitle,
+        theme: theme,
+      );
+    }
+
+    final searchVm = ref.read(searchViewModelProvider.notifier);
+    final transitRepo = ref.read(transitRepositoryProvider);
+
+    return ListView.builder(
+      itemCount: state.savedRoutes.length,
+      padding: const EdgeInsets.all(16),
+      itemBuilder: (context, index) {
+        final route = state.savedRoutes[index];
+        final originId = route['origin_id'] ?? '';
+        final destinationId = route['destination_id'] ?? '';
+        final String? routeName = route['name'];
+        final String routeDisplayName =
+            (routeName == null ||
+                routeName.isEmpty ||
+                routeName == t.favorites.unnamedRoute)
+            ? t.favorites.unnamedRoute
+            : routeName;
+        String originName = route['origin_name'] ?? '';
+        String destinationName = route['destination_name'] ?? '';
+        if (originName.isEmpty || destinationName.isEmpty) {
+          final nameParts = (route['name'] ?? '').split(' - ');
+          if (nameParts.length >= 2) {
+            if (originName.isEmpty) originName = nameParts[0];
+            if (destinationName.isEmpty) destinationName = nameParts[1];
+          }
+        }
+        final originLatStr = route['origin_lat'];
+        final originLngStr = route['origin_lng'];
+        final destLatStr = route['destination_lat'];
+        final destLngStr = route['destination_lng'];
+
+        final originItem = _resolveSearchableItem(
+          originId,
+          originName,
+          originName,
+          originLatStr,
+          originLngStr,
+          transitRepo,
+        );
+
+        final destItem = _resolveSearchableItem(
+          destinationId,
+          destinationName,
+          destinationName,
+          destLatStr,
+          destLngStr,
+          transitRepo,
+        );
+
+        final String originDisplayName = originItem != null
+            ? (localeCode == 'th' ? originItem.nameTh : originItem.nameEn)
+            : originName;
+        final String destDisplayName = destItem != null
+            ? (localeCode == 'th' ? destItem.nameTh : destItem.nameEn)
+            : destinationName;
+
+        return Card(
+          margin: const EdgeInsets.only(bottom: 12),
+          child: ListTile(
+            contentPadding: const EdgeInsets.symmetric(
+              horizontal: 16,
+              vertical: 8,
+            ),
+            leading: CircleAvatar(
+              backgroundColor: theme.appColors.routeColor?.withValues(
+                alpha: 0.1,
+              ),
+              child: Icon(
+                Icons.route_rounded,
+                color: theme.appColors.routeColor,
+              ),
+            ),
+            title: Text(
+              routeDisplayName,
+              style: theme.textTheme.titleMedium?.copyWith(
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            subtitle: Padding(
+              padding: const EdgeInsets.only(top: 4),
+              child: RichText(
+                text: TextSpan(
+                  style: theme.textTheme.bodyMedium?.copyWith(
+                    color: theme.colorScheme.onSurface.withValues(alpha: 0.7),
+                  ),
+                  children: [
+                    TextSpan(text: originDisplayName),
+                    WidgetSpan(
+                      alignment: PlaceholderAlignment.middle,
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 4),
+                        child: Icon(
+                          Icons.arrow_forward_rounded,
+                          size: 14,
+                          color: theme.colorScheme.primary,
+                        ),
+                      ),
+                    ),
+                    TextSpan(text: destDisplayName),
+                  ],
+                ),
+              ),
+            ),
+            trailing: IconButton(
+              icon: const Icon(
+                Icons.delete_outline_rounded,
+                color: Colors.redAccent,
+              ),
+              onPressed: () {
+                vm.deleteRoute(originId, destinationId);
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text(t.routeResult.routeDeletedSuccess)),
+                );
+              },
+            ),
+            onTap: () async {
+              if (originItem != null && destItem != null) {
+                await searchVm.setRoute(originItem, destItem);
+                if (context.mounted) {
+                  context.go(AppRoute.map); // Switch to Map Screen
+                }
+              }
+            },
+          ),
+        );
+      },
+    );
+  }
+
+  Widget _buildEmptyState({
+    required BuildContext context,
+    required IconData icon,
+    required String title,
+    required String subtitle,
+    required ThemeData theme,
+  }) {
+    return Center(
+      child: Padding(
+        padding: const EdgeInsets.all(32),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Icon(
+              icon,
+              size: 80,
+              color: theme.colorScheme.primary.withValues(alpha: 0.3),
+            ),
+            const SizedBox(height: 16),
+            Text(
+              title,
+              style: theme.textTheme.headlineMedium,
+              textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 8),
+            Text(
+              subtitle,
+              style: theme.textTheme.bodyMedium,
+              textAlign: TextAlign.center,
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}

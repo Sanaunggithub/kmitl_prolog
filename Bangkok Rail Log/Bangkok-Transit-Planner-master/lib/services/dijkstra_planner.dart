@@ -1,0 +1,309 @@
+import 'dart:collection';
+import '../models/station.dart';
+import '../providers/disruption_provider.dart';
+import '../core/constants/transit_constants.dart';
+
+class GraphEdge {
+  final String fromId;
+  final String toId;
+  final String lineId;
+  final double weight;
+
+  const GraphEdge({
+    required this.fromId,
+    required this.toId,
+    required this.lineId,
+    required this.weight,
+  });
+}
+
+class _DijkstraNode implements Comparable<_DijkstraNode> {
+  final String stationId;
+  final double distance;
+
+  const _DijkstraNode(this.stationId, this.distance);
+
+  @override
+  int compareTo(_DijkstraNode other) => distance.compareTo(other.distance);
+}
+
+class TransitGraph {
+  static final _whitespaceRegex = RegExp(r'\s+');
+
+  final Map<String, Station> _stations = {};
+  final Map<String, List<GraphEdge>> _adjacency = {};
+
+  Map<String, Station> get stations => Map.unmodifiable(_stations);
+
+  void addStation(Station station) {
+    _stations[station.id] = station;
+    _adjacency.putIfAbsent(station.id, () => []);
+  }
+
+  void addEdge(
+    String fromId,
+    String toId,
+    String lineId, {
+    double weight = TransitConstants.kAvgTimeBetweenStations,
+  }) {
+    _adjacency.putIfAbsent(fromId, () => []);
+    _adjacency.putIfAbsent(toId, () => []);
+
+    _adjacency[fromId]!.add(
+      GraphEdge(fromId: fromId, toId: toId, lineId: lineId, weight: weight),
+    );
+    _adjacency[toId]!.add(
+      GraphEdge(fromId: toId, toId: fromId, lineId: lineId, weight: weight),
+    );
+  }
+
+  void addTransferEdge(
+    String fromId,
+    String toId, {
+    double walkingMinutes = TransitConstants.kTransferWalkingTime,
+  }) {
+    _adjacency.putIfAbsent(fromId, () => []);
+    _adjacency.putIfAbsent(toId, () => []);
+
+    _adjacency[fromId]!.add(
+      GraphEdge(
+        fromId: fromId,
+        toId: toId,
+        lineId: 'TRANSFER',
+        weight: walkingMinutes,
+      ),
+    );
+    _adjacency[toId]!.add(
+      GraphEdge(
+        fromId: toId,
+        toId: fromId,
+        lineId: 'TRANSFER',
+        weight: walkingMinutes,
+      ),
+    );
+  }
+
+  List<GraphEdge> getEdges(String stationId) {
+    return _adjacency[stationId] ?? [];
+  }
+
+  Station? getStation(String stationId) {
+    return _stations[stationId];
+  }
+
+  DijkstraResult? findShortestPath(
+    String fromId,
+    String toId, {
+    DateTime? time,
+    DisruptionState? disruptionState,
+  }) {
+    if (!_stations.containsKey(fromId) || !_stations.containsKey(toId)) {
+      return null;
+    }
+    if (fromId == toId) {
+      return DijkstraResult(
+        path: [PathStep(stationId: fromId, lineId: '', edgeWeight: 0)],
+        totalWeight: 0,
+      );
+    }
+
+    final dist = <String, double>{fromId: 0.0};
+    final prev = <String, String?>{};
+    final prevEdge = <String, GraphEdge?>{};
+    final visited = <String>{};
+    final pq = SplayTreeSet<_DijkstraNode>((a, b) {
+      final cmp = a.distance.compareTo(b.distance);
+      if (cmp != 0) return cmp;
+      return a.stationId.compareTo(b.stationId);
+    });
+
+    final evalTime = time ?? DateTime.now();
+    double getTransferWaitPenalty(String targetStationId) {
+      final targetStation = getStation(targetStationId);
+      if (targetStation != null && targetStation.lineId.isNotEmpty) {
+        final interval = TransitConstants.getInterval(
+          targetStation.lineId,
+          evalTime,
+        );
+        return interval / 2.0;
+      }
+      final isPeak = TransitConstants.isPeakHour(evalTime);
+      return isPeak
+          ? TransitConstants.kPeakTransferWaitMinutes
+          : TransitConstants.kOffPeakTransferWaitMinutes;
+    }
+
+    pq.add(_DijkstraNode(fromId, 0));
+
+    while (pq.isNotEmpty) {
+      final current = pq.first;
+      pq.remove(current);
+
+      if (current.stationId == toId) break;
+      if (visited.contains(current.stationId)) continue;
+      visited.add(current.stationId);
+
+      for (final edge in getEdges(current.stationId)) {
+        if (visited.contains(edge.toId)) continue;
+
+        final currentDist = dist[current.stationId] ?? double.infinity;
+
+        double actualWeight = edge.weight;
+        if (edge.lineId == 'TRANSFER') {
+          actualWeight += getTransferWaitPenalty(edge.toId);
+        }
+
+        double dijkstraCost = actualWeight;
+
+        // Apply Disruption Penalties
+        if (disruptionState != null && disruptionState.disruptions.isNotEmpty) {
+          final isFromDisrupted = disruptionState.isStationDisrupted(
+            current.stationId,
+          );
+          final isToDisrupted = disruptionState.isStationDisrupted(edge.toId);
+          final isSegDisrupted = disruptionState.isSegmentDisrupted(
+            current.stationId,
+            edge.toId,
+          );
+
+          if (isFromDisrupted || isToDisrupted || isSegDisrupted) {
+            final disruption =
+                disruptionState.getDisruptionForStation(current.stationId) ??
+                disruptionState.getDisruptionForStation(edge.toId);
+
+            if (disruption != null) {
+              if (disruption.isFullClosure || disruption.isPartialClosure) {
+                dijkstraCost += TransitConstants
+                    .kDisruptedPenaltyWeight; // Force pathfinding to detour
+              } else if (disruption.isMinorDelay) {
+                final delay =
+                    (disruption.estimatedDelayMinutes ??
+                            TransitConstants.kDefaultDelayMinutes)
+                        .toDouble();
+                dijkstraCost += delay;
+                actualWeight += delay;
+              }
+            } else if (isSegDisrupted) {
+              dijkstraCost += TransitConstants.kDisruptedPenaltyWeight;
+            }
+          }
+        }
+
+        final newDist = currentDist + dijkstraCost;
+        final edgeToDist = dist[edge.toId] ?? double.infinity;
+
+        if (newDist < edgeToDist) {
+          // Remove old entry if exists
+          if (edgeToDist != double.infinity) {
+            pq.remove(_DijkstraNode(edge.toId, edgeToDist));
+          }
+          dist[edge.toId] = newDist;
+          prev[edge.toId] = current.stationId;
+          prevEdge[edge.toId] = edge;
+          pq.add(_DijkstraNode(edge.toId, newDist));
+        }
+      }
+    }
+
+    // Reconstruct path
+    if (!dist.containsKey(toId)) return null;
+
+    final path = <PathStep>[];
+    String? current = toId;
+    double totalPhysicalWeight = 0.0;
+
+    while (current != null) {
+      final edge = prevEdge[current];
+      double stepWeight = edge?.weight ?? 0.0;
+
+      if (edge != null) {
+        if (edge.lineId == 'TRANSFER') {
+          stepWeight += getTransferWaitPenalty(edge.toId);
+        }
+        if (disruptionState != null && disruptionState.disruptions.isNotEmpty) {
+          final disruption =
+              disruptionState.getDisruptionForStation(edge.fromId) ??
+              disruptionState.getDisruptionForStation(edge.toId);
+          if (disruption != null && disruption.isMinorDelay) {
+            stepWeight += (disruption.estimatedDelayMinutes ?? 10).toDouble();
+          }
+        }
+        totalPhysicalWeight += stepWeight;
+      }
+
+      path.add(
+        PathStep(
+          stationId: current,
+          lineId: edge?.lineId ?? '',
+          edgeWeight: stepWeight,
+        ),
+      );
+      current = prev[current];
+    }
+
+    return DijkstraResult(
+      path: path.reversed.toList(),
+      totalWeight: totalPhysicalWeight,
+    );
+  }
+
+  List<Station> searchStations(String query) {
+    if (query.isEmpty) return [];
+    final q = query.toLowerCase().replaceAll(_whitespaceRegex, '');
+    return _stations.values.where((s) {
+      final normalizedTh = s.nameTh.toLowerCase().replaceAll(
+        _whitespaceRegex,
+        '',
+      );
+      final normalizedEn = s.nameEn.toLowerCase().replaceAll(
+        _whitespaceRegex,
+        '',
+      );
+      final normalizedCode = s.code.toLowerCase().replaceAll(
+        _whitespaceRegex,
+        '',
+      );
+      final normalizedId = s.id.toLowerCase().replaceAll(_whitespaceRegex, '');
+
+      return normalizedTh.contains(q) ||
+          normalizedEn.contains(q) ||
+          normalizedCode.contains(q) ||
+          normalizedId.contains(q);
+    }).toList();
+  }
+}
+
+class PathStep {
+  final String stationId;
+  final String lineId;
+  final double edgeWeight;
+
+  const PathStep({
+    required this.stationId,
+    required this.lineId,
+    required this.edgeWeight,
+  });
+}
+
+class DijkstraResult {
+  final List<PathStep> path;
+  final double totalWeight;
+
+  const DijkstraResult({required this.path, required this.totalWeight});
+
+  int get stationCount => path.length;
+
+  List<String> get lineIds => path
+      .map((s) => s.lineId)
+      .where((id) => id.isNotEmpty && id != 'TRANSFER')
+      .toSet()
+      .toList();
+
+  int get transferCount {
+    int count = 0;
+    for (int i = 1; i < path.length; i++) {
+      if (path[i].lineId == 'TRANSFER') count++;
+    }
+    return count;
+  }
+}

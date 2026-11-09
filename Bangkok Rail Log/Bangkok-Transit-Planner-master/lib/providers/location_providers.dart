@@ -1,0 +1,88 @@
+import 'package:flutter/foundation.dart';
+import 'package:riverpod_annotation/riverpod_annotation.dart';
+import 'package:geolocator/geolocator.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+import '../core/utils/logger.dart';
+
+part 'location_providers.g.dart';
+
+// ============================================================================
+// WARNING: MOCK LOCATION PROVIDER FOR DEVELOPMENT & TESTING ONLY.
+// To prevent accidental leaks in Production/PlayStore releases, all simulation
+// functions and persistence loading are guarded by 'kDebugMode'.
+// In release mode, the provider will always report 'null' (real GPS).
+// ============================================================================
+
+@riverpod
+class MockLocation extends _$MockLocation {
+  @override
+  Position? build() {
+    if (kDebugMode) {
+      _loadMockLocation();
+    }
+    return null;
+  }
+
+  Future<void> _loadMockLocation() async {
+    // Only load persisted mock coordinates if in debug mode
+    if (!kDebugMode) return;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final lat = prefs.getDouble('mock_latitude');
+      final lng = prefs.getDouble('mock_longitude');
+      if (lat != null && lng != null) {
+        state = Position(
+          latitude: lat,
+          longitude: lng,
+          timestamp: DateTime.now(),
+          accuracy: 10.0,
+          altitude: 0.0,
+          altitudeAccuracy: 0.0,
+          heading: 0.0,
+          headingAccuracy: 0.0,
+          speed: 0.0,
+          speedAccuracy: 0.0,
+        );
+      }
+    } catch (e, st) {
+      AppLogger.warning('Failed to load mock location from storage: $e', stackTrace: st);
+    }
+  }
+
+  Future<void> setMockLocation(double latitude, double longitude) async {
+    // Hard guard to completely block mocking in production/release mode
+    if (!kDebugMode) return;
+
+    final pos = Position(
+      latitude: latitude,
+      longitude: longitude,
+      timestamp: DateTime.now(),
+      accuracy: 10.0,
+      altitude: 0.0,
+      altitudeAccuracy: 0.0,
+      heading: 0.0,
+      headingAccuracy: 0.0,
+      speed: 0.0,
+      speedAccuracy: 0.0,
+    );
+    state = pos;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setDouble('mock_latitude', latitude);
+      await prefs.setDouble('mock_longitude', longitude);
+    } catch (e, st) {
+      AppLogger.warning('Failed to persist mock location: $e', stackTrace: st);
+    }
+  }
+
+  Future<void> clearMockLocation() async {
+    state = null;
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.remove('mock_latitude');
+      await prefs.remove('mock_longitude');
+    } catch (e, st) {
+      AppLogger.warning('Failed to clear mock location from storage: $e', stackTrace: st);
+    }
+  }
+}

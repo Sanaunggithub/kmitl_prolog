@@ -1,0 +1,73 @@
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.atom/
+.build/
+.buildlog/
+.history
+.svn/
+.swiftpm/
+migrate_working_dir/
+
+# IDE & Editors
+*.iml
+*.ipr
+*.iws
+.idea/
+#.vscode/
+
+# Flutter/Dart/Pub related
+**/doc/api/
+**/ios/Flutter/.last_build_id
+.dart_tool/
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+/build/
+/coverage/
+lib/generated_plugin_registrant.dart
+
+# Firebase configs
+/android/app/google-services.json
+/ios/Runner/GoogleService-Info.plist
+
+# Generated code (Riverpod, Freezed, JsonSerializable)
+*.g.dart
+*.freezed.dart
+
+# Symbolication & Obfuscation
+app.*.symbols
+app.*.map.json
+
+# Android build artifacts
+/android/app/debug
+/android/app/profile
+/android/app/release
+
+# Platform ephemeral & auto-generated plugin registrant files
+/linux/flutter/ephemeral/
+/linux/flutter/generated_plugin_registrant.*
+/linux/flutter/generated_plugins.cmake
+/macos/Flutter/ephemeral/
+/macos/Flutter/GeneratedPluginRegistrant.swift
+/windows/flutter/ephemeral/
+/windows/flutter/generated_plugin_registrant.*
+/windows/flutter/generated_plugins.cmake
+
+# Assets & Data files
+/assets/data/*.sql
+/assets/map_tiles.bundle
+
+# Environment & Config (use config.example.json as template)
+.vercel
+.env*
+config.json
+
+# Node/Web dependencies
+node_modules/
+
+# Temporary scratch folders
+scratch/
